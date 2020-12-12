@@ -2,8 +2,8 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/primary_color</item>
-        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="colorPrimary">#EC0F0F</item>
+        <item name="colorPrimaryDark">#B81414</item>
     </style>
 
     <!-- Style for a category of vocabulary words -->
@@ -14,6 +14,7 @@
         <item name="android:padding">16dp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">8dp</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
 </resources>

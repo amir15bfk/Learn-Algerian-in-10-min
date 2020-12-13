@@ -3,20 +3,22 @@ package com.example.learnalgerienin10min;
 public class Word {
     private String enWord;
     private String algWord;
+    private int image;
     public Word(String en,String alg){
         this.enWord=en;
         this.algWord=alg;
     }
+    public Word(String en,String alg,int img){
+        this.enWord=en;
+        this.algWord=alg;
+        this.image=img;
+    }
     public String getEnWord(){
         return this.enWord;
-    }
-    public void setEnWord(String en){
-        this.enWord=en;
     }
     public String getAlgWord(){
         return this.algWord;
     }
-    public void setAlgWord(String alg){
-        this.algWord=alg;
-    }
+    public int getImage(){
+        return this.image; }
 }

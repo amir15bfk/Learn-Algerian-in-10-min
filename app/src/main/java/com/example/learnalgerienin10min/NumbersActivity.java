@@ -16,7 +16,7 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
         ArrayList<Word> words=new ArrayList<Word>();
-        Collections.addAll(words, new Word []{ new Word("One","wa7d"),
+        Collections.addAll(words, new Word("One","wa7d"),
                 new Word("Two","zoj"),
                 new Word( "Three","tlata"),
                 new Word("Four","rb3a"),
@@ -25,7 +25,7 @@ public class NumbersActivity extends AppCompatActivity {
                 new Word("Seven","sb3a"),
                 new Word("Eight","tmnya"),
                 new Word( "Nine","ts3a"),
-                new Word("Ten","3achra")});
+                new Word("Ten","3achra"));
 
         //for (int i= 0;i<10;i++) Log.v("Numbers activity","word[0] is :"+words.get(i));
         /*LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);

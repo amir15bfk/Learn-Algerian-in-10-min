@@ -3,7 +3,7 @@ package com.example.learnalgerienin10min;
 public class Word {
     private String enWord;
     private String algWord;
-    private int image;
+    private int image=0;
     public Word(String en,String alg){
         this.enWord=en;
         this.algWord=alg;

@@ -16,16 +16,16 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
         ArrayList<Word> words=new ArrayList<Word>();
-        Collections.addAll(words, new Word("One","wa7d"),
-                new Word("Two","zoj"),
-                new Word( "Three","tlata"),
-                new Word("Four","rb3a"),
-                new Word("Five","5amsa"),
-                new Word("Six","sta"),
-                new Word("Seven","sb3a"),
-                new Word("Eight","tmnya"),
-                new Word( "Nine","ts3a"),
-                new Word("Ten","3achra"));
+        Collections.addAll(words, new Word("One","wa7d",R.drawable.one),
+                new Word("Two","zoj",R.drawable.two),
+                new Word( "Three","tlata",R.drawable.three),
+                new Word("Four","rb3a",R.drawable.four),
+                new Word("Five","5amsa",R.drawable.five),
+                new Word("Six","sta",R.drawable.six),
+                new Word("Seven","sb3a",R.drawable.seven),
+                new Word("Eight","tmnya",R.drawable.eight),
+                new Word( "Nine","ts3a",R.drawable.nine),
+                new Word("Ten","3achra",R.drawable.ten));
 
         //for (int i= 0;i<10;i++) Log.v("Numbers activity","word[0] is :"+words.get(i));
         /*LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);

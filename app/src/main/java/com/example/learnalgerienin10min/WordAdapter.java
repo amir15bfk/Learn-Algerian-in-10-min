@@ -24,11 +24,25 @@ public class WordAdapter extends ArrayAdapter<Word> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
+        Word currentWord = getItem(position);
+        if (currentWord.getImage()!=0){
         if(listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
-        Word currentWord = getItem(position);
+
+
+
+        ImageView iconView = (ImageView) listItemView.findViewById(R.id.image);
+
+        iconView.setImageResource(currentWord.getImage());}
+        else{
+            if(listItemView == null) {
+                listItemView = LayoutInflater.from(getContext()).inflate(
+                        R.layout.list_item_without_imege, parent, false);
+            }
+        }
+
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView engTextView = (TextView) listItemView.findViewById(R.id.inEnglish);
@@ -36,11 +50,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
         TextView algTextView = (TextView) listItemView.findViewById(R.id.inAlgerian);
 
         algTextView.setText(currentWord.getAlgWord());
-
-        /*
-        ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
-
-        iconView.setImageResource(currentWord.getImageResourceId());*/
 
         return listItemView;
 }

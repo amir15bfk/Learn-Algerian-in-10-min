@@ -16,15 +16,14 @@ public class ColorsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
         ArrayList<Word> words=new ArrayList<Word>();
-        Collections.addAll(words, new Word []{ new Word("red","7mer"),
-                new Word("green","5dar"),
-                new Word( "Three","tlata"),
-                new Word("brown","boni"),
-                new Word("gray","gris"),
-                new Word("blak","k7al"),
-                new Word("white","byed"),
-                new Word("yellow","sfar"),
-                new Word( "blue","zra9")});
+        Collections.addAll(words, new Word []{ new Word("red","7mer",R.drawable.color_red),
+                new Word("green","5dar",R.drawable.color_green),
+                new Word("brown","boni",R.drawable.color_brown),
+                new Word("gray","gris",R.drawable.color_gray),
+                new Word("black","k7al",R.drawable.color_black),
+                new Word("white","byed",R.drawable.color_white),
+                new Word("yellow","sfar",R.drawable.color_mustard_yellow),
+                new Word( "blue","zra9",R.drawable.color_blue)});
 
         WordAdapter itemsAdapter = new WordAdapter(this, words);
 

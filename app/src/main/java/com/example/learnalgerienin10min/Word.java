@@ -19,6 +19,6 @@ public class Word {
     public String getAlgWord(){
         return this.algWord;
     }
-    public int getImage(){
-        return this.image; }
+    public int getImage(){ return this.image; }
+    public boolean hasImage(){return image!= 0;}
 }

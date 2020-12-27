@@ -32,10 +32,8 @@ public class FamilyActivity extends AppCompatActivity {
                 new Word("my mother","yema",R.drawable.family_mother,R.raw.family_mother),
                 new Word( "my son","wlidi",R.drawable.family_son,R.raw.family_son),
                 new Word("my daughter","bnti",R.drawable.family_daughter,R.raw.family_daughter),
-                new Word("my older brother","5oya el kbir",R.drawable.family_older_brother,R.raw.family_older_brother),
-                new Word("my younger brother","5oya asrir",R.drawable.family_younger_brother,R.raw.family_younger_brother),
-                new Word("my older sister","5ti el 5bira",R.drawable.family_older_sister,R.raw.family_older_sister),
-                new Word("my younger sister","5ti asrira",R.drawable.family_younger_sister,R.raw.family_younger_sister),
+                new Word("my older brother","5oya",R.drawable.family_older_brother,R.raw.family_brother),
+                new Word("my younger sister","5ti",R.drawable.family_younger_sister,R.raw.family_sister),
                 new Word( "my grandmother","jdati",R.drawable.family_grandmother,R.raw.family_grandmother),
                 new Word("my grandfather","jdi",R.drawable.family_grandfather,R.raw.family_grandfather));
 

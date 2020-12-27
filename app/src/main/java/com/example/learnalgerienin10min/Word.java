@@ -9,10 +9,10 @@ public class Word {
         this.enWord=en;
         this.algWord=alg;
     }
-    public Word(String en,String alg,int img){
+    public Word(String en,String alg,int sound){
         this.enWord=en;
         this.algWord=alg;
-        this.image=img;
+        this.soundID=sound;
     }
     public Word(String en,String alg,int img,int sound){
         this.enWord=en;
@@ -34,7 +34,7 @@ public class Word {
         return "Word{" +
                 "mDefaultTranslation='" + enWord + '\'' +
                 ", mAlgerianTranslation='" + algWord + '\'' +
-                ", mAudioResourceId=" + soundID +
+                ", mAudioResourceId=" + soundID + '\''+
                 ", mImageResourceId=" + image +
                 '}';
     }

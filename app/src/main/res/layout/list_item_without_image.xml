@@ -58,8 +58,8 @@
                 /></LinearLayout>
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/play_button"
             android:layout_gravity="center_vertical"/></LinearLayout>
 
